@@ -1,0 +1,16 @@
+certs/
+.env
+*.log
+*.out.log
+*.err.log
+*.pid
+tunnel_url.txt
+adapter_api_key.txt
+bin/cloudflared*
+docker-data/
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+venv/
+dist/*.zip

@@ -1,0 +1,38 @@
+name: warp-kie-adapter
+
+services:
+  adapter:
+    build:
+      context: .
+      target: adapter
+      args:
+        APP_VERSION: "0.1.0"
+    image: warp-kie-adapter:local
+    ports:
+      - "${ADAPTER_HOST_PORT:-8787}:8787"
+    volumes:
+      - adapter-certs:/app/certs
+    restart: unless-stopped
+
+  tunnel:
+    profiles:
+      - tunnel
+    build:
+      context: .
+      target: tunnel
+      args:
+        APP_VERSION: "0.1.0"
+    image: warp-kie-adapter-tunnel:local
+    depends_on:
+      adapter:
+        condition: service_healthy
+    environment:
+      TUNNEL_TARGET: "https://adapter:8787"
+      TUNNEL_LOG: "/data/cloudflared.log"
+      TUNNEL_URL_FILE: "/data/tunnel_url.txt"
+    volumes:
+      - ./docker-data:/data
+    restart: unless-stopped
+
+volumes:
+  adapter-certs:

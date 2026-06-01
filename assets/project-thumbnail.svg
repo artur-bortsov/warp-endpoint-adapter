@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">Warp Kie.ai Endpoint Adapter</title>
+  <desc id="desc">OpenAI-compatible adapter between Warp and Kie.ai Claude models.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101624"/>
+      <stop offset="1" stop-color="#1d2b4a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset="1" stop-color="#29d3ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="500" rx="34" fill="url(#bg)"/>
+  <circle cx="1060" cy="80" r="180" fill="#29d3ff" opacity="0.10"/>
+  <circle cx="120" cy="450" r="220" fill="#7c5cff" opacity="0.12"/>
+  <g font-family="Inter, Arial, Helvetica, sans-serif">
+    <rect x="72" y="70" width="188" height="36" rx="18" fill="#ffffff" fill-opacity="0.10" stroke="#ffffff" stroke-opacity="0.18"/>
+    <text x="166" y="94" text-anchor="middle" font-size="15" font-weight="700" fill="#dbeafe">Warp BYO endpoint</text>
+    <text x="72" y="172" font-size="58" font-weight="800" fill="#ffffff">Warp Kie.ai</text>
+    <text x="72" y="236" font-size="58" font-weight="800" fill="#ffffff">Endpoint Adapter</text>
+    <rect x="72" y="258" width="220" height="7" rx="3.5" fill="url(#accent)"/>
+    <text x="72" y="316" font-size="24" fill="#dce7ff">Use Kie.ai Claude models from Warp via</text>
+    <text x="72" y="350" font-size="24" fill="#dce7ff">an OpenAI-compatible HTTPS bridge.</text>
+    <g font-size="15" font-weight="700" fill="#eaf2ff">
+      <rect x="72" y="388" width="122" height="34" rx="17" fill="#ffffff" fill-opacity="0.10"/>
+      <text x="133" y="410" text-anchor="middle">Streaming</text>
+      <rect x="208" y="388" width="124" height="34" rx="17" fill="#ffffff" fill-opacity="0.10"/>
+      <text x="270" y="410" text-anchor="middle">Tool calls</text>
+      <rect x="346" y="388" width="158" height="34" rx="17" fill="#ffffff" fill-opacity="0.10"/>
+      <text x="425" y="410" text-anchor="middle">No local key file</text>
+    </g>
+    <g filter="url(#shadow)">
+      <rect x="610" y="70" width="540" height="360" rx="28" fill="#0f172a" fill-opacity="0.72" stroke="#ffffff" stroke-opacity="0.12"/>
+      <text x="646" y="122" font-size="25" font-weight="800" fill="#ffffff">How it works</text>
+      <text x="646" y="154" font-size="16" fill="#bac7dd">Translate Warp chat requests into Kie Claude messages.</text>
+      <g transform="translate(646 200)">
+        <rect width="132" height="128" rx="18" fill="#17213a"/>
+        <rect y="0" width="132" height="8" rx="4" fill="#7c5cff"/>
+        <circle cx="66" cy="17" r="10" fill="#7c5cff"/>
+        <text x="66" y="70" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">Warp</text>
+        <text x="66" y="98" text-anchor="middle" font-size="13" fill="#b8c7df">/chat/completions</text>
+      </g>
+      <text x="814" y="269" font-size="26" fill="#75e5ff">→</text>
+      <g transform="translate(850 200)">
+        <rect width="132" height="128" rx="18" fill="#17213a"/>
+        <rect y="0" width="132" height="8" rx="4" fill="#29d3ff"/>
+        <circle cx="66" cy="17" r="10" fill="#29d3ff"/>
+        <text x="66" y="70" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">Adapter</text>
+        <text x="66" y="98" text-anchor="middle" font-size="13" fill="#b8c7df">auth + mapping</text>
+      </g>
+      <text x="1018" y="269" font-size="26" fill="#75e5ff">→</text>
+      <g transform="translate(1054 200)">
+        <rect width="72" height="128" rx="18" fill="#17213a"/>
+        <rect y="0" width="72" height="8" rx="4" fill="#22c55e"/>
+        <circle cx="36" cy="17" r="10" fill="#22c55e"/>
+        <text x="36" y="70" text-anchor="middle" font-size="20" font-weight="800" fill="#fff">Kie</text>
+        <text x="36" y="98" text-anchor="middle" font-size="12" fill="#b8c7df">Claude</text>
+      </g>
+      <text x="646" y="386" font-size="13" fill="#aebdd5">Python · macOS/Linux/Windows · GPL-3.0 · Cloudflare Tunnel optional</text>
+    </g>
+  </g>
+</svg>
