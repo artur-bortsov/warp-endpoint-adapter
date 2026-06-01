@@ -28,10 +28,10 @@
     <g font-size="15" font-weight="700" fill="#eaf2ff">
       <rect x="72" y="388" width="122" height="34" rx="17" fill="#ffffff" fill-opacity="0.10"/>
       <text x="133" y="410" text-anchor="middle">Streaming</text>
-      <rect x="208" y="388" width="124" height="34" rx="17" fill="#ffffff" fill-opacity="0.10"/>
-      <text x="270" y="410" text-anchor="middle">Tool calls</text>
-      <rect x="346" y="388" width="158" height="34" rx="17" fill="#ffffff" fill-opacity="0.10"/>
-      <text x="425" y="410" text-anchor="middle">No local key file</text>
+      <rect x="208" y="388" width="148" height="34" rx="17" fill="#ffffff" fill-opacity="0.10"/>
+      <text x="282" y="410" text-anchor="middle">Text fallback</text>
+      <rect x="370" y="388" width="158" height="34" rx="17" fill="#ffffff" fill-opacity="0.10"/>
+      <text x="449" y="410" text-anchor="middle">No local key file</text>
     </g>
     <g filter="url(#shadow)">
       <rect x="610" y="70" width="540" height="360" rx="28" fill="#0f172a" fill-opacity="0.72" stroke="#ffffff" stroke-opacity="0.12"/>

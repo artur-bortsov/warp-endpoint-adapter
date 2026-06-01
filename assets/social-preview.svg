@@ -24,7 +24,7 @@
       <rect x="318" y="452" width="178" height="42" rx="21" fill="#ffffff" fill-opacity="0.10"/>
       <text x="407" y="479">Streaming</text>
       <rect x="526" y="452" width="182" height="42" rx="21" fill="#ffffff" fill-opacity="0.10"/>
-      <text x="617" y="479">Tool calls</text>
+      <text x="617" y="479">Text fallback</text>
       <rect x="738" y="452" width="224" height="42" rx="21" fill="#ffffff" fill-opacity="0.10"/>
       <text x="850" y="479">No local key file</text>
     </g>
